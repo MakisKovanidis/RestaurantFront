@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gr.kovanidis.controllers.TableViewController">
+   <children>
+      <Label fx:id="labelTest" text="Label" AnchorPane.leftAnchor="400.0" AnchorPane.topAnchor="200.0" />
+      <VBox alignment="TOP_CENTER" layoutX="159.0" layoutY="54.0" prefHeight="200.0" prefWidth="100.0" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button id="btn1" fx:id="deleteButton" mnemonicParsing="false" onAction="#deleteElementFromList" text="Delete" />
+            <Button id="btn2" fx:id="addButton" mnemonicParsing="false" onAction="#addElement" text="Add Item" />
+            <Button id="btn3" mnemonicParsing="false" text="Button3" />
+            <Button id="btn4" mnemonicParsing="false" text="Button4" />
+         </children>
+         <padding>
+            <Insets top="10.0" />
+         </padding>
+      </VBox>
+      <HBox alignment="CENTER_RIGHT" layoutX="600.0" prefHeight="100.0" prefWidth="200.0" spacing="20.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button id="minimize" mnemonicParsing="false" text="minimize" />
+            <Button id="Exit" mnemonicParsing="false" text="Exit">
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+         <opaqueInsets>
+            <Insets right="20.0" />
+         </opaqueInsets>
+      </HBox>
+      <ListView fx:id="myList" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<FlowPane alignment="CENTER" columnHalignment="CENTER" hgap="20.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" vgap="20.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gr.kovanidis.controllers.LaunchViewController">
+
+   <children>
+      <Button fx:id="PosButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#beginPos">
+         <graphic>
+            <ImageView fx:id="Pos" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#beginPos" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/PosIcon128.png" />
+               </image></ImageView>
+         </graphic></Button>
+      <Button fx:id="StatisticsButton" mnemonicParsing="false">
+         <graphic>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/ChartIcon1-128.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button fx:id="SettingsButton" mnemonicParsing="false">
+         <graphic>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/SettingsIcon128.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button fx:id="ExitButton" mnemonicParsing="false">
+         <graphic>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/ExitIcon128.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+   </children>
+</FlowPane>

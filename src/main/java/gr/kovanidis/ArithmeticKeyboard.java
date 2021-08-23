@@ -1,4 +1,4 @@
-package sample;
+package gr.kovanidis;
 
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
